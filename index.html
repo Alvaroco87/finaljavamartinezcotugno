@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
+    <title>Bienvenido Al Conversor de Monedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="form-contact">
+        <header>
+            <span>
+                <p>Bienvenido Al Conversor!</p>
+                <h1><div>
+                    <p id="apiDolar">Dolar: </p>
+                </div></h1>
+
+            </span>
+        </header>
+    
+        <form action="" class="contact" method="POST" id="contact">
+            <label for="nombres">Ingresa tu Nombre</label>
+            <input type="text" name="nombres" id="nombres" required>
+            <label for="cantidad">Cantidad de pesos a cambiar</label>
+            <input type="number" name="cantidad" id="cantidad" required>
+    
+            <p id="select">Cambiar a:
+                <p type="text" name="moneda" required>
+                    <option value="dolar" id="moneda">Dolar</option>
+                </p>
+                <h1 id="resultado">Resultado: </h1>
+            </p>
+            <input type="submit" value="Enviar" id="enviar">
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
